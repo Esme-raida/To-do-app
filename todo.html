@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="todo.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <h1 style="color:black;">My To-<span style="color:gray;">Do List</span></h1>
+    <form class="container" id="todo-form">
+      <input type="text" class="task-input-class" id="todoInput" placeholder="Add a new task..." required />
+      <input type="date" class="task-date-class" id="dateInput">
+      <button type="submit" id= "jsBtn" class="add-btn-class">Add</button>
+      <button class="status-class">Status</button>
+    </form>
+
+    <div id="tasksDisplay" class="tasks-display"></div>
+  </div>
+    <div class="footer"> 
+      <span id="taskCount">Tasks left: </span>
+    </div>
+  </div>
+</body>
+<script src="todo.js"></script>
+</html>
